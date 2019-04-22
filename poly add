@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+class Add {
+public:
+  int sum(int n1, int n2){
+     return n1+n2;
+  }
+  int sum(int num1, int num2, int num3){
+     return n1+n2+n3;
+  }
+};
+int main() {
+  Add obj;
+  cout<<"Output: "<<obj.sum(9, 26)<<endl;//This will call the 1st function
+  cout<<"Output: "<<obj.sum(1, 52, 3);//This will call the 2nd function
+}
